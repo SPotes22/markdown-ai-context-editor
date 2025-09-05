@@ -1,0 +1,5 @@
+{
+  "name": "Markdown AI Context Editor",
+  "description": "A web-based markdown editor with an integrated AI context generator powered by Gemini. Write, preview your markdown in real-time, and get AI-powered insights on your selected text.",
+  "requestFramePermissions": []
+}
