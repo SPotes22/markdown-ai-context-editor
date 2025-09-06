@@ -25,4 +25,4 @@ dist-ssr
 *.zip
 *.env
 *.key
-
+.env
