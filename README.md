@@ -1,66 +1,36 @@
+**Subject: Strengthen Your Digital Security: Introducing Paranoid Vault, the Password Manager that Empowers You**
 
-# Editor Markdown con Contexto de IA (Gemini)
+Dear users,
 
-Este es un editor de Markdown basado en la web con un generador de contexto de IA integrado, impulsado por la API de Gemini. Escribe, previsualiza tu Markdown en tiempo real y obtén información generada por IA sobre el texto que selecciones.
+In today’s digital world, where data breaches are a constant threat, keeping our credentials secure is crucial. Too often, we rely on weak, reused, or insecurely stored passwords, leaving ourselves vulnerable to exposure.
 
-## Características
+We present **Paranoid Vault (or “Password Locker — Argon2 Edition”)**, an innovative solution designed to transform your password hygiene and give you unprecedented security.
 
-- **Editor de Markdown**: Escribe y edita archivos de Markdown en una interfaz limpia.
-- **Previsualización en vivo**: Ve el HTML renderizado de tu Markdown al instante.
-- **Contexto con IA**: Selecciona cualquier texto y obtén un contexto explicativo generado por el modelo Gemini de Google.
-- **Soporte para preguntas**: Haz preguntas directas en tu texto (ej. `$¿Qué es React?$`) y obtén respuestas de la IA.
-- **Gestión de archivos**: Abre archivos locales, guarda tu trabajo como `.md` o exporta el HTML renderizado.
-- **Personalización de fuentes**: Cambia entre fuentes Sans-Serif y Monospace para mayor comodidad.
+**What is Paranoid Vault?**
 
-## Stack Tecnológico
+It’s a command-line (CLI) password manager that lets you generate, manage, and derive unique, robust passwords for each of your services. Unlike other systems, it doesn’t rely on cloud syncing, giving you complete control over your credentials. It utilizes state-of-the-art cryptographic algorithms, such as **Argon2id** **and** **AES,** to ensure your passwords are virtually unbreakable and protected against the most advanced attacks, including GPU-powered brute-force attacks.
 
-- **Framework**: React 18
-- **Lenguaje**: TypeScript
-- **Servidor de Desarrollo**: Vite
-- **Estilos**: Tailwind CSS
-- **IA Generativa**: Google Gemini API
-- **Renderizado de Markdown**: Marked.js
+**Why is it crucial for your security?**
 
-## Cómo empezar (Configuración en Crostini / Linux)
+1. **Unique, Robust Passwords:** Forget about reusing the same password across multiple sites. Paranoid Vault cryptographically generates strong, unique passwords for each service, removing a massive attack vector.
 
-Sigue estos pasos para configurar y ejecutar el proyecto en tu entorno local.
+2. **Deterministic Derivation (no leaks):** Your passwords are derived from your “Master Password” and a specific “entry name” (e.g., “Facebook”). That means your password for a given service is always the same, without being explicitly stored. This eliminates the risk of plain-text password theft from databases.
 
-### Prerrequisitos
+3. **Simplifies Periodic Password Changes:** While the tool ensures each password is unique and strong, we know updating credentials is also important. Paranoid Vault makes this easy: if you want to change a service password, simply create a new entry (e.g., “Facebook-2024”) and instantly get a fresh, secure password—without the burden of remembering it.
 
-- **Node.js**: Debes tener Node.js instalado. Puedes instalarlo desde el gestor de paquetes de tu distribución (ej. `sudo apt install nodejs npm`).
-- **Clave de API de Gemini**: Necesitas una clave de API de Google AI Studio.
+4. **Total Control and Privacy:** As a local tool, your credentials never leave your system. No third-party cloud servers are involved, ensuring your privacy and absolute control.
 
-### Instalación
+**What does it do, and how does it raise awareness?**
 
-1.  **Archivos del Proyecto**: Asegúrate de tener todos los archivos del proyecto en una carpeta.
+Paranoid Vault is your personal ally in cybersecurity. It empowers you to adopt best practices by eliminating the excuses for using weak or repeated passwords.
 
-2.  **Crear el archivo de entorno**: Ya creaste un archivo `.env`. **Renómbralo a `.env.local`**. Este nombre es importante para que Vite lo reconozca.
+* **Teaches through simplicity:** Shows that managing extremely strong passwords doesn’t have to be complicated.
 
-3.  **Añadir tu clave de API**: Abre el archivo `.env.local` y añade tu clave de la siguiente manera. Asegúrate de que la variable comience con `VITE_`.
+* **Raises resilience awareness:** By using Argon2id, it introduces you to a security standard that protects against brute-force and dictionary attacks, highlighting the importance of algorithmic robustness.
 
-    ```
-    VITE_API_KEY=TU_CLAVE_DE_API_DE_GEMINI_AQUI
-    ```
+* **Encourages proactivity:** By making it trivial to generate new unique passwords (whenever you want to rotate or when a service requires it), the tool encourages you to manage your digital security proactively instead of reactively.
 
-4.  **Instalar dependencias**: Abre una terminal en la carpeta del proyecto y ejecuta el siguiente comando para instalar todas las librerías necesarias:
-    ```bash
-    npm install
-    ```
+**In short, Paranoid Vault isn’t just a password manager; it’s a security philosophy—guiding you toward a safer digital future, where password uniqueness and rotation become a natural, painless part of your routine.**
 
-5.  **Ejecutar el servidor de desarrollo**: Una vez instaladas las dependencias, inicia la aplicación con:
-    ```bash
-    npm run dev
-    ```
+---
 
-6.  **Abrir la aplicación**: La terminal te mostrará una URL local (normalmente `http://localhost:5173`). Abre esa dirección en tu navegador web.
-
-¡Y listo! Ya tienes el editor funcionando en tu máquina.
-
-## Cómo Usar la Aplicación
-
-1.  **Escribir**: Utiliza el panel izquierdo para escribir o pegar tu contenido en formato Markdown.
-2.  **Previsualizar**: El panel central mostrará automáticamente la versión HTML de tu texto.
-3.  **Obtener Contexto**:
-    - Selecciona una palabra o una frase en el editor de la izquierda.
-    - Haz clic en el botón **"Generate Context"** en el panel derecho.
-    - La IA analizará el texto seleccionado y mostrará una explicación detallada.
